@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
+import server from "../environment";
 
 // Create Context
 const AuthContext = createContext();
@@ -20,7 +21,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState("");
 
   // Backend Base URL
-  const API = "http://localhost:8000/api/v1/users";
+  const API = `${server}/api/v1/users`;
 
   // Register User
   const register = async (formData) => {
