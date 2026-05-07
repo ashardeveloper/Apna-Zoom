@@ -1,0 +1,175 @@
+/* AuthPage.module.css */
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Left Side */
+.left {
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Right Side */
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+  padding: 30px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  background: #2563eb;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  background: #eef2f7;
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 25px;
+}
+
+.tabBtn {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input {
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #2563eb;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submitBtn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background: #1d4ed8;
+}
+
+.footer {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .image {
+    height: 280px;
+  }
+
+  .right {
+    padding: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
